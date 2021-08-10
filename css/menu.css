@@ -1,0 +1,94 @@
+.head{
+    margin:auto;
+    width:100%;
+    padding: 0;
+    font-family:'Roboto-Regular';
+    margin-top: 1px;
+    /* position: fixed; */
+} 
+.hea{
+    grid-column-start: 1;
+    grid-column-end: 4;  
+}
+.nav li a {
+    background-color:#ffffff;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+/*************** ****************** Menu **************************************/
+.contenedor .head nav{
+    margin-left: 183px;
+    
+}
+.contenedor .head nav ul{
+    display: block;
+    /* overflow: hidden; Limpiamos errores de float */
+}
+.contenedor .head nav ul li{
+    display: block;
+    font-weight: 300;
+    
+} 
+.head nav ul li a:link{
+    color:rgb(30, 16, 230);
+    text-decoration: underline;
+    text-decoration: none;
+}
+.contenedor .head nav ul li{
+    color:rgb(255, 255, 255);
+    font-family:'OpenSans-Regular' ;
+    display: inline-block;
+    padding: 8px;
+    margin-left: 13px;
+    margin-top: 59px;
+}
+.contenedor .head nav li:hover{
+    color:rgb(255, 255, 255);
+    background: rgb(255, 3, 70);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+    transition: .4s;
+}
+/*************** ****************** Menu Fin **************************************/
+
+
+/********************************** Logo *****************************************/
+.jdo{
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    z-index: auto;
+    margin-top: -90px;
+    margin-left: -33px;
+}
+/********************************** Logo Fin *****************************************/
+/**********************************Sub Menu *****************************************/
+.submenu{
+    width: 901px;
+    height: 50px;
+    background: rgb(231,183,171);
+    background: linear-gradient(90deg,  #FFDDBA 0%, rgba(231,183,171,1) 49%, rgba(231, 183, 171, 0.993) 100%);
+    margin-top: 6px;
+    margin-left: 112px;
+    border-top-left-radius: 123px 104px ;
+    position: absolute;
+    z-index: auto;
+}
+.submenu_{
+    width: 901px;
+    height: 50px;
+    background: rgb(231,183,171);
+    background: linear-gradient(90deg, #FFDDBA 0%, rgba(231,183,171,1) 49%, rgba(231,183,171,1) 100%);
+    margin-top: -100px;
+    margin-left: 112px;
+    border-bottom-left-radius: 123px 104px ;
+    /* box-shadow: -2px 3px 2px rgb(224, 193, 193); */
+    position: absolute;
+    z-index: auto;
+}

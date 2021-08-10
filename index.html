@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ropa & Accesorios</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/search.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/logo.css" rel="stylesheet" type="text/css">
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link href="css/foot.css" rel="stylesheet" type="text/css">
+    <link href="css/font.css" rel="stylesheet" type="text/css">
+    <link href="css/slider1.css" rel="stylesheet" type="text/css">
+    <script  src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+   
+  </head>
+  <body>
+    <div class="contenedor">
+        <header class="head">
+            <nav>   
+              
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="carrito.html">carrito de compra</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="pages/acerca.html">Acerca</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <img src="img/logo/logo1.jfif" class="jdo" title="JADO">
+            <div class="submenu_">
+                <p class="lgin">Login</p>
+            </div>
+            <div class="submenu"></div>
+            <div class="search">
+            <input type="search" placeholder="Buscar aqui" id="input-search"/>
+            <div class="content-search">
+                 <div class="content-table">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">inicio</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">css</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">index</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">php</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">html</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">juegos</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">call of duty</a></td>
+                                </tr>
+                            </tbody>
+                        </thead>
+
+                    </table>
+                </div> 
+            </div>
+        </header>
+        <main class="contenido1">
+           
+            <div class="slider">
+                <div class="slides">
+                    <p class="fshn">FASHION</p>
+                    <p class="watt">YOU SO PRETY</p>
+                    <p></p>
+                    <p class="botton">RESERVACIONES</p>
+                    
+                    <!---------------radio button start------->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <!---------------radio button start------->
+                    <!---------------imagen slider start---------->
+                    <div class="slide first">
+                        <img src="img/galery/slider/banner1.jpg" class="im-slide" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/galery/slider/banner2.jpg" class="im-slide" alt="">	
+                    </div>
+                    <div class="slide">
+                        <img src="img/galery/slider/banner3.jpg" class="im-slide" alt="">	
+                    </div>
+                    <div class="slide">
+                        <img src="img/galery/slider/banner4.jpg" class="im-slide" alt="">	
+                    </div>
+                    <div class="slide">
+                        <img src="img/galery/slider/banner5.jpg" class="im-slide" alt="">	
+                    </div>
+                  
+                    <!---------------imagen slider fin---------->
+                    <!---------------automatic navegation slider----------->
+                    <!-- <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div> -->
+                    <!-----------------atm nvg slider--------------------->
+                
+                <!--------------------------manual navegatin start---------->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    
+                    <script type="text/javascript">
+                        let slider = document.querySelector(".slides")
+                        let sliderIndividual = document.querySelectorAll(".slide")
+                        let contador = 1;
+                        let width = sliderIndividual[0].clientWidth;
+                        let intervalo = 8000;
+                
+                        setInterval(function () {
+                          slides1();
+                        }, intervalo);
+                
+                        function slides1() {
+                          slider.style.transform = "translate(" + (-width * contador) + "px)";
+                          slider.style.transition = "transform 1s";
+                          contador++;
+                
+                          if (contador == sliderIndividual.length) {
+                            setTimeout(function () {
+                              slider.style.transform = "translate(0px)";
+                              slider.style.transition = "transform 0s";
+                              contador = 1;
+                            }, 4000)
+                          }
+                        }
+                      </script>
+
+        
+                </div>
+                <!--------------------------manual navegatin start---------->
+        
+                <section class="center">
+                </section>
+            </div>
+           
+            </div>
+        </main>
+        
+        <main class="contenido">
+         <div class="crt">
+            <img 
+            src="img/cartera/cartera 1.jpg" 
+            class="carte"
+            data-toggle=""
+            data-tigger=""
+            data-content=""
+            >
+            <p class="cartfoll">Cartera gucci</p>
+            <p class="lrm1">Precio: $51.52</p>
+            <p class="lrm2">Oferta: 50%</p>
+            <p class="lrm3">Descuento:32.45%</p>
+            <p class="cmpr"> Add to Cart</p>
+       
+        </div>
+        <!----------------------------------------------------------------->
+        <div class="crt2">
+            <img 
+            src="img/cartera/cartera2.jpg" 
+            class="carte2"
+            data-toggle=""
+            data-tigger=""
+            data-content=""
+            >
+
+            <p class="cartfoll2">Cartera gucci</p>
+            <p class="lrm1">Precio: $34.78.52</p>
+            <p class="lrm2">Oferta: 50%</p>
+            <p class="lrm3">Descuento:18.45%</p>
+            <p class="cmpr2"> Add to Cart</p>
+       
+        </div>
+        <!------------------------------------------------------------------>
+        <div class="crt3">
+            <img 
+            src="img/cartera/cartera3.jpg" 
+            class="carte3"
+            data-toggle=""
+            data-tigger=""
+            data-content=""
+            >
+            <p class="cartfoll3">Cartera gucci</p>
+            <p class="lrm1">Precio: $45.52</p>
+            <p class="lrm2">Oferta: 50%</p>
+            <p class="lrm3">Descuento:16.45%</p>
+            <p class="cmpr3">Add to Cart</p>
+       <!------------------------------------------------------------------->
+      
+        </main>
+        <div class="widget-1">
+            <!-- <h3>Contenido 1</h3> -->
+            <div class="widget-image">
+        <img src="img/Cartera 1/Cartera A1.jpg" alt="" class="zap">
+    </div>
+        </div>
+        <div class="widget-2">
+            <!-- <h3>Contenido 2</h3> -->
+            <div class="widget-image-2">
+            <img src="img/Cartera 1/Cartera B1.jpg" alt="" class="zap">
+            </div>
+        </div>
+        <div class="widget-3">
+            <!-- <h3>Contenido 3</h3> -->
+            <div class="widget-image-3">
+                <img src="img/Cartera 1/Cartera C1.jpg" alt="" class="zap">
+            </div>
+        </div>
+        <div class="widget-4">
+            <!-- <h3>Contenido 4</h3> -->
+            <div class="widget-image-4">
+                <img src="img/Cartera 1/Cartera D1.jpg" alt="" class="zap">
+            </div>
+        </div>
+        <div class="widget-5">
+            <!-- <h3>Contenido 5</h3> -->
+            <div class="widget-image-5">
+                <img src="img/Cartera 1/Cartera V1.jpg" alt="" class="zap">
+            </div>
+        </div>
+        <div class="widget-6">
+            <!-- <h3>Contenido 6</h3> -->
+            <div class="widget-image-6">
+                <img src="img/Cartera 1/Cartera Z1.jpg" alt="" class="zap">
+            </div>
+        </div>
+        <!-- <aside class="sidebar">
+            <p></p>
+        </aside> -->
+    
+        <footer class="foot">
+            <p class="jd">JADO</p>
+            <p class="servcos">Servicios</p>
+            <p class="rdscials">Redes Sociales</p>
+
+            <p class="infor" title="Informacion"><a>Informacion</a></p>
+            <p class="prove" title="Provedores"><a>Provedores</a></p>
+            <p class="tiend" title="Tienda"><a>Tienda</a></p>
+            <p class="corro" title="Correo"><a>ropacessros@gmail.com</a></p>
+            <p class="tell" title="Telefono"><a>Tel.: (503) 22346722</a></p>
+            <figure class="pypl">
+
+               <a href="https://www.facebook.com"> <img src="img/red/facebook.png" class=" cardet" title="Facebook"></a> 
+               <a href="https://myaccount.google.com"><img src="img/red/g+.png" class=" cardet" title="GOOGLE+"></a> 
+               <a href="https://www.instagram.com"><img src="img/red/Instagram.png" class=" cardet" title="INSTAGRAM"></a> 
+               <a href="https://www.skype.com"><img src="img/red/skype.png" class=" cardet" title=SKYPE"></a> 
+               <a href="https://twitter.com"><img src="img/red/twitter.png" class=" cardet" title="TWITTER"></a> 
+               <a href="https://www.youtube.com"><img src="img/red/youtube.png" class="cardet" title="YOUTUBE"></a> 
+                <!-------------------------------------------------------------->
+                <!-- <img src="img/targetas/western_union.png" class="tarjet">
+                <img src="img/targetas/discover.png" class="tarjet">
+                <img src="img/targetas/express.png" class="tarjet">
+                <img src="img/targetas/visa.png" class="tarjet">
+                <img src="img/targetas/visaelectron.png" class="tarjet">
+                <img src="img/targetas/BAC.png" class="tarjet">  -->
+            </figure>
+            <figure class="icon">
+                <p class ="inff">Mail: ropaccesorio@gmail.com</p>
+                <img src="img/red/logo-gmail.png" class="icon1">
+                <p class="inff">Tel.:(503 7585-6585)</p>
+                <img src="img/red/phone1.png" class="icon1">
+                <p class="inff">Tel.:(503 7585-6585)</p>
+                <img src="img/red/whatsapp_48px.png" class="icon1">
+                <p class="inff">Tel.:(503 2526-5455)</p>
+                <img src="img/red/location_40px.png" class="icon1">  
+            </figure>
+            <p class="copyjd">CopyRight - by JADO | 2021</p>
+            <input type="text" name="buscador" placeholder="Buscar..." title="Buscador" class="busc"/>
+        </footer>
+
+    </div>
+   
+    <script src="js/search.js"></script>
+  </body>
+</html>
